@@ -69,3 +69,14 @@ set noswapfile
 "搜索忽略大小写
 set ignorecase
 
+autocmd BufNewFile *.cpp,*.sh,*.py exec ":call SetTitle()"
+func SetTitle()
+    if &filetype == 'sh'
+        call setline(1, "\# haha")
+    else
+        call setline(1, "\# coding=utf-8")
+        call append(line("."), "\# author:xsl")
+        call append(line(".")+1, "")
+    endif
+    autocmd BUfNewFile * normal G
+endfunc
