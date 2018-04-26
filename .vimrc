@@ -78,5 +78,6 @@ func SetTitle()
         call append(line("."), "\# author:xsl")
         call append(line(".")+1, "")
     endif
-    autocmd BufNewFile * normal G
 endfunc
+
+autocmd BufNewFile * normal G
