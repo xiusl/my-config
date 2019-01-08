@@ -81,3 +81,5 @@ func SetTitle()
 endfunc
 
 autocmd BufNewFile * normal G
+au BufRead,BufNewFile *.vue set filetype=vue
+au BufRead,BufNewFile *.dart set filetype=dart shiftwidth=2 expandtab
