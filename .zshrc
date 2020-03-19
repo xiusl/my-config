@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/xiusl/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export PATH=`pwd`/flutter/bin:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -61,7 +61,7 @@ ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git,
+  git
   zsh-syntax-highlighting
 )
 
